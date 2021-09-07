@@ -11,8 +11,8 @@ struct WeatherData:Decodable {
     let info:Info
     let fact:Fact
     let forecasts:[Forecast]
-    
-    
+    let yesterday:Yesterday
+
 }
 struct Info:Decodable {
     let url:String
@@ -20,7 +20,6 @@ struct Info:Decodable {
 
 struct Fact:Decodable {
     let temp:Int
-   
     let condition:String
  
     
@@ -30,14 +29,13 @@ struct Fact:Decodable {
     }
 }
 
+struct Yesterday:Decodable{
+    let temp:Int
+}
+
+
+
 struct Forecast:Decodable {
-    let parts:Parts
-    
+    let date_ts: Int
 }
-struct Parts:Decodable {
-    let day:Day
-    
-}
-struct Day:Decodable {
-    
-}
+

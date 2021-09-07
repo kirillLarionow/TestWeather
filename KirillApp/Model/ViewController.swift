@@ -28,7 +28,7 @@ class ViewController: UIViewController {
    
     private let emptyCity = Weather()
     var filterCityArray = [Weather]()
-    
+    let refreshScreen = UIRefreshControl()
     
     private var nameCitiesArray = ["Москва","Санкт-Петербург","Казань","Екатеринбург",
         "Нижний Новгород","Сочи","Тюмень","Новосибирск","Уфа","Ростов-на-Дону"]
@@ -62,7 +62,18 @@ class ViewController: UIViewController {
         definesPresentationContext = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(buttonAdd))
+        refreshScreen.attributedTitle = NSAttributedString(string: "Refresh..")
+        refreshScreen.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        myTableView.addSubview(refreshScreen)
         myTableView.reloadData()
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        
+        self.myTableView.reloadData()
+        //self.myTableView.isEditing = true
+        print("it's working!")
+        refreshScreen.endRefreshing()
     }
    
     func addCity() { 
@@ -154,7 +165,7 @@ extension ViewController: UITableViewDelegate {
         
         self.navigationController?.pushViewController(secondViewController, animated: true)
   
-         
+        tableView.deselectRow(at: indexPath, animated: true)
 
     }
      
@@ -216,6 +227,7 @@ extension ViewController: UISearchResultsUpdating {
     
     private func filterContentText(_ searchText:String){
         filterCityArray = cityArray.filter{ $0.name.contains(searchText) }
+        
         myTableView.reloadData()
     }
 }

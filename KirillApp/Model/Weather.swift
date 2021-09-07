@@ -14,6 +14,14 @@ struct Weather {
     var temperatureString:String{
         return String(temperature)
     }
+    var temperatureYesterday:Int = 0
+    var temperatureYesterdayString:String{
+        return String(temperatureYesterday)
+    }
+    var temperatureTomorrow:Int = 0
+    var temperatureTomorrowString:String{
+        return String(temperatureTomorrow)
+    }
     var url:String = ""
     var condition:String = "" //ясно облачно
     
@@ -44,13 +52,23 @@ struct Weather {
     }
     
     init?(weatherData:WeatherData) {
-        temperature = weatherData.fact.temp
+        
+         temperature = weatherData.fact.temp
         condition = weatherData.fact.condition
         url = weatherData.info.url
-         
+        temperatureYesterday = weatherData.yesterday.temp
+        
+    
+        
+       
+        
     }
+        
+    
     
     init() {
         
     }
 }
+
+

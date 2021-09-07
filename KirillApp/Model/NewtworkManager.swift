@@ -9,9 +9,9 @@ import Foundation
 
 
 struct NewtorkManager {
-    func yandexAPI(lat:Double,lon:Double,completionHandler: @escaping (Weather) -> Void){
+    func yandexAPI(lat:Double,lon:Double, completionHandler: @escaping (Weather) -> Void){
         let apiKey = "7358525a-964d-4c20-8018-e43ec9b733ca"
-        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=\(lat)&lon=\(lon)&limit=1"
+        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=\(lat)&lon=\(lon)&limit=3"
         guard let url = URL(string: urlString) else { return }
 
         var request = URLRequest(url: url, timeoutInterval: Double.infinity)
