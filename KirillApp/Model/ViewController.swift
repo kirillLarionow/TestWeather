@@ -80,9 +80,10 @@ class ViewController: UIViewController {
         getCityWeather(cityArray: nameCitiesArray) { (index,weather) in
             self.cityArray[index] = weather
             self.cityArray[index].name = self.nameCitiesArray[index]
-            DispatchQueue.main.async {
-                self.myTableView.reloadData()
-            }
+            //DispatchQueue.main.async {
+                //         self.myTableView.reloadData()
+                print("qefsdfs")
+            //}
         }
         print(cityArray)
     }
