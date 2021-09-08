@@ -58,7 +58,7 @@ struct Weather {
         url = weatherData.info.url
         temperatureYesterday = weatherData.yesterday.temp
         
-    
+        temperatureTomorrow = weatherData.forecasts[1].parts.day.tempAvg ?? 0
         
        
         

@@ -36,6 +36,19 @@ struct Yesterday:Decodable{
 
 
 struct Forecast:Decodable {
-    let date_ts: Int
+    let parts:Parts
 }
+
+struct Parts:Decodable {
+    let day:Day
+}
+
+struct Day:Decodable {
+    let tempAvg: Int?
+    enum CodingKeys:String,CodingKey {
+        case tempAvg = "temp_avg"
+    }
+}
+
+
 

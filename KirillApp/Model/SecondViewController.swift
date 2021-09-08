@@ -51,8 +51,7 @@ class SecondViewController: UIViewController{
         tempYesterdayLabel.textAlignment = .center
         
         tempTomorrowLabel.frame = CGRect(x: 0, y: 0, width: 374, height: 45)
-        tempTomorrowLabel.text = (weatherModel?.temperatureTomorrowString)!
-            //+ "°C - Tomorrow"
+        tempTomorrowLabel.text = (weatherModel?.temperatureTomorrowString)! + "°C - Tomorrow"
         tempTomorrowLabel.font = UIFont.systemFont(ofSize: 20.0)
         tempTomorrowLabel.adjustsFontSizeToFitWidth = true
         tempTomorrowLabel.textAlignment = .center
