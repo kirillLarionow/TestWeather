@@ -8,12 +8,10 @@
 import Foundation
 import CoreLocation
 
-
 let newtorkManager = NewtorkManager()
 
 func getCityWeather(cityArray:[String],completionHandler: @escaping (Int,Weather) -> Void) {
     for (index,item) in cityArray.enumerated() {
-        
         getCoordinate(city: item) { coordinate, error in
             guard let coordinate = coordinate,error == nil else { return }
             newtorkManager.yandexAPI(lat: coordinate.latitude, lon: coordinate.longitude) { (weather) in

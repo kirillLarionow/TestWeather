@@ -12,7 +12,6 @@ struct WeatherData:Decodable {
     let fact:Fact
     let forecasts:[Forecast]
     let yesterday:Yesterday
-
 }
 struct Info:Decodable {
     let url:String
@@ -21,8 +20,6 @@ struct Info:Decodable {
 struct Fact:Decodable {
     let temp:Int
     let condition:String
- 
-    
     enum CodingKeys:String,CodingKey {
         case temp
         case condition
@@ -32,8 +29,6 @@ struct Fact:Decodable {
 struct Yesterday:Decodable{
     let temp:Int
 }
-
-
 
 struct Forecast:Decodable {
     let parts:Parts

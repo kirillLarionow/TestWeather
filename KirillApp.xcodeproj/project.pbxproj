@@ -147,6 +147,8 @@
 		1210D71C26DEE2BA00127784 /* KirillApp */ = {
 			isa = PBXGroup;
 			children = (
+				4B6219A726F4F6DA00BEA60E /* Controllers */,
+				4B62199E26F4F68200BEA60E /* Weather */,
 				12BEFF4F26DFB61800467567 /* Model */,
 				12BEFF4C26DFB57A00467567 /* View */,
 				12BEFF4B26DFB55100467567 /* SupportFiles */,
@@ -177,13 +179,8 @@
 		12BEFF4F26DFB61800467567 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1210D72126DEE2BA00127784 /* ViewController.swift */,
-				12BEFF4926DF987E00467567 /* SecondViewController.swift */,
 				12BEFF5626DFBFF400467567 /* GetCityWeather.swift */,
 				12BEFF4726DF71A800467567 /* CustomTableViewCell.swift */,
-				12BEFF5226DFB75900467567 /* WeatherData.swift */,
-				12BEFF5426DFB9EB00467567 /* Weather.swift */,
-				12BEFF5026DFB64000467567 /* NewtworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +205,25 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B62199E26F4F68200BEA60E /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				12BEFF5026DFB64000467567 /* NewtworkManager.swift */,
+				12BEFF5426DFB9EB00467567 /* Weather.swift */,
+				12BEFF5226DFB75900467567 /* WeatherData.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		4B6219A726F4F6DA00BEA60E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12BEFF4926DF987E00467567 /* SecondViewController.swift */,
+				1210D72126DEE2BA00127784 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

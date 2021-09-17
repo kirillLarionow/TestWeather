@@ -9,8 +9,8 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
-    let nameCity = UILabel() // название города
-    let tempCityLabel = UILabel() // температура
+    let nameCity = UILabel()
+    let tempCityLabel = UILabel()
 
     func configure(weather:Weather) {
         self.nameCity.text = weather.name

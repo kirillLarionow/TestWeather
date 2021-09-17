@@ -8,7 +8,6 @@
 import Foundation
 
 struct Weather {
-    
     var name:String = " "
     var temperature:Int = 0
     var temperatureString:String{
@@ -23,8 +22,7 @@ struct Weather {
         return String(temperatureTomorrow)
     }
     var url:String = ""
-    var condition:String = "" //ясно облачно
-    
+    var condition:String = ""
     var conditionString:String {
         switch condition {
         case "clear": return "Ясно"
@@ -48,24 +46,16 @@ struct Weather {
         default:
             return ""
         }
-       
+        
     }
-    
     init?(weatherData:WeatherData) {
         
-         temperature = weatherData.fact.temp
+        temperature = weatherData.fact.temp
         condition = weatherData.fact.condition
         url = weatherData.info.url
         temperatureYesterday = weatherData.yesterday.temp
-        
         temperatureTomorrow = weatherData.forecasts[1].parts.day.tempAvg ?? 0
-        
-       
-        
     }
-        
-    
-    
     init() {
         
     }
