@@ -62,6 +62,9 @@ class ViewController: UIViewController {
         getCityWeather(cityArray: nameCitiesArray) { (index,weather) in
             self.cityArray[index] = weather
             self.cityArray[index].name = self.nameCitiesArray[index]
+//            DispatchQueue.main.async {
+//                            self.myTableView.reloadData()
+//                        }
         }
         print(cityArray)
     }
@@ -160,6 +163,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "MyCell") as! CustomTableViewCell
+        cell.nameCity.textAlignment = .center
         var weather = Weather()
         
         if isFilter {
