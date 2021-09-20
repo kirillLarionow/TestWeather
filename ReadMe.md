@@ -3,3 +3,5 @@
 <img width="470" alt="Снимок экрана 2021-09-20 в 19 41 43" src="https://user-images.githubusercontent.com/88253448/134041370-5374e358-037b-41e5-85d4-b667fa4b78e8.png">
 <img width="470" alt="Снимок экрана 2021-09-20 в 19 41 52" src="https://user-images.githubusercontent.com/88253448/134041387-cb936fa5-4155-4c48-b3c5-e58ce5239204.png">
 <img width="470" alt="Снимок экрана 2021-09-20 в 19 43 36" src="https://user-images.githubusercontent.com/88253448/134041402-6ae7fb8d-53fd-4636-9178-c33dadb4856f.png">
+<img width="463" alt="Снимок экрана 2021-09-20 в 19 48 16" src="https://user-images.githubusercontent.com/88253448/134041732-a07dd2d2-3053-44ef-bb01-bd2c489b3fa1.png">
+<img width="815" alt="Снимок экрана 2021-09-20 в 19 48 24" src="https://user-images.githubusercontent.com/88253448/134041752-e873812c-f615-4110-887f-397422523802.png">
