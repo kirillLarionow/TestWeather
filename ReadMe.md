@@ -1,5 +1,5 @@
-<img width="476" alt="Снимок экрана 2021-09-08 в 16 16 45" src="https://user-images.githubusercontent.com/88253448/132516543-d5dde3db-254e-45b1-b8c6-06e41da30315.png">
-<img width="476" alt="Снимок экрана 2021-09-08 в 16 16 45" src="https://user-images.githubusercontent.com/88253448/131753087-9abe4a57-3b96-43e2-a495-d8b8df743507.png">
-<img width="476" alt="Снимок экрана 2021-09-08 в 16 16 45" src="https://user-images.githubusercontent.com/88253448/131753089-1fdcee93-bf16-42ab-a2f2-88efeca9c229.png">
-<img width="476" alt="Снимок экрана 2021-09-08 в 16 16 45" src="https://user-images.githubusercontent.com/88253448/131753091-a5ff7715-9239-493e-9100-f138944f6ce2.png"><img width="432" alt="Снимок экрана 2021-09-08 в 16 39 13" src="https://user-images.githubusercontent.com/88253448/132520818-51eb455f-2395-46ff-ae5b-1fdc7947100c.png">
-
+<img width="426" alt="Снимок экрана 2021-09-20 в 19 41 30" src="https://user-images.githubusercontent.com/88253448/134041349-8d2c7174-9537-4742-a7cb-16030d863e57.png">
+<img width="470" alt="Снимок экрана 2021-09-20 в 19 41 39" src="https://user-images.githubusercontent.com/88253448/134041365-352e12b0-a8af-432c-9334-d0affda19567.png">
+<img width="470" alt="Снимок экрана 2021-09-20 в 19 41 43" src="https://user-images.githubusercontent.com/88253448/134041370-5374e358-037b-41e5-85d4-b667fa4b78e8.png">
+<img width="470" alt="Снимок экрана 2021-09-20 в 19 41 52" src="https://user-images.githubusercontent.com/88253448/134041387-cb936fa5-4155-4c48-b3c5-e58ce5239204.png">
+<img width="470" alt="Снимок экрана 2021-09-20 в 19 43 36" src="https://user-images.githubusercontent.com/88253448/134041402-6ae7fb8d-53fd-4636-9178-c33dadb4856f.png">
